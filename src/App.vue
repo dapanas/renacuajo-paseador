@@ -5,8 +5,8 @@
         <div class="form-floating">
           <select v-model="selectedDate" class="form-select form-select-lg" aria-label="Seleccione un día"
                   id="dateSelect">
-            <option v-for="(date, index) in datesLabels" :value="index" :key="index">
-              {{ date }}
+            <option v-for="date in activeDates" :value="date[0]" :key="date[0]">
+              {{ date[1].label }}
             </option>
           </select>
           <label for="dateSelect" class="form-label">Fecha</label>
@@ -27,31 +27,26 @@
 
       <section v-if="selectedDate !== ''">
         <div v-if="selectedGroup === ''" class="container">
-          <div v-for="(group, index) in dates[selectedDate]" :key="index" class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-12"><span>{{ groups[index] }}</span></div>
-              </div>
-              <div class="row">
-                <div class="col-6">Dejar en {{ group.drop_off_at }}</div>
-                <div class="col-6">Recoger en {{ group.pick_up_at }}</div>
-              </div>
+
+          <div v-for="(group, index) in dates[selectedDate]" :key="index" class="card mt-3" style="width: 18rem;">
+            <div class="card-header text-center">
+              <h6>{{ groups[index] }}</h6>
+            </div>
+            <div class="card-body">
+              <div class="col-12">Dejar en <strong><i>{{ group.drop_off_at }}</i></strong></div>
+              <div class="col-12">Recoger en <strong><i>{{ group.pick_up_at }}</i></strong></div>
             </div>
           </div>
         </div>
 
-        <div v-if="selectedGroup !== ''" class="container">
-          <div class="row">
-            <div class="col-12">
-              <div class="row">
-                <div class="col-12">
-                  <span>{{ groups[selectedGroup] }}</span>
-                </div>
-              </div>
-              <div class="row">
-                <div class="col-6">Dejar en {{ dates[selectedDate][selectedGroup].drop_off_at }}</div>
-                <div class="col-6">Recoger en {{ dates[selectedDate][selectedGroup].pick_up_at }}</div>
-              </div>
+        <div v-if="selectedGroup !== ''" class="container mt-3">
+          <div class="card" style="width: 18rem;">
+            <div class="card-header text-center">
+              <h6>{{ groups[selectedGroup] }}</h6>
+            </div>
+            <div class="card-body">
+              <div class="col-12">Dejar en <strong><i>{{ dates[selectedDate][selectedGroup].drop_off_at }}</i></strong></div>
+              <div class="col-12">Recoger en <strong><i>{{ dates[selectedDate][selectedGroup].pick_up_at }}</i></strong></div>
             </div>
           </div>
         </div>
@@ -520,24 +515,29 @@ export default {
         las_brisas: "Las Brisas",
       },
       datesLabels: {
-        "19_02_2022": "Febrero 19",
-        "26_02_2022": "Febrero 26",
-        "05_03_2022": "Marzo 05",
-        "12_03_2022": "Marzo 12",
-        "19_03_2022": "Marzo 19",
-        "26_03_2022": "Marzo 26",
-        "02_04_2022": "Abril 02",
-        "09_04_2022": "Abril 09",
-        "16_04_2022": "Abril 16",
-        "23_04_2022": "Abril 23",
-        "30_04_2022": "Abril 30",
-        "07_05_2022": "Mayo 07",
-        "14_05_2022": "Mayo 14",
-        "21_05_2022": "Mayo 21",
-        "28_05_2022": "Mayo 28",
-        "04_06_2022": "Junio 04",
-        "11_06_2022": "Junio 11",
+        "19_02_2022": {label: "Febrero 19", date: new Date(2022, 2 - 1, 19, 23, 59, 59)},
+        "26_02_2022": {label: "Febrero 26", date: new Date(2022, 2 - 1, 26, 23, 59, 59)},
+        "05_03_2022": {label: "Marzo 05", date: new Date(2022, 3 - 1, 5, 23, 59, 59)},
+        "12_03_2022": {label: "Marzo 12", date: new Date(2022, 3 - 1, 12, 23, 59, 59)},
+        "19_03_2022": {label: "Marzo 19", date: new Date(2022, 3 - 1, 19, 23, 59, 59)},
+        "26_03_2022": {label: "Marzo 26", date: new Date(2022, 3 - 1, 26, 23, 59, 59)},
+        "02_04_2022": {label: "Abril 02", date: new Date(2022, 4 - 1, 2, 23, 59, 59)},
+        "09_04_2022": {label: "Abril 09", date: new Date(2022, 4 - 1, 9, 23, 59, 59)},
+        "16_04_2022": {label: "Abril 16", date: new Date(2022, 4 - 1, 16, 23, 59, 59)},
+        "23_04_2022": {label: "Abril 23", date: new Date(2022, 4 - 1, 23, 23, 59, 59)},
+        "30_04_2022": {label: "Abril 30", date: new Date(2022, 4 - 1, 30, 23, 59, 59)},
+        "07_05_2022": {label: "Mayo 07", date: new Date(2022, 5 - 1, 7, 23, 59, 59)},
+        "14_05_2022": {label: "Mayo 14", date: new Date(2022, 5 - 1, 14, 23, 59, 59)},
+        "21_05_2022": {label: "Mayo 21", date: new Date(2022, 5 - 1, 21, 23, 59, 59)},
+        "28_05_2022": {label: "Mayo 28", date: new Date(2022, 5 - 1, 28, 23, 59, 59)},
+        "04_06_2022": {label: "Junio 04", date: new Date(2022, 6 - 1, 4, 23, 59, 59)},
+        "11_06_2022": {label: "Junio 11", date: new Date(2022, 6 - 1, 11, 23, 59, 59)},
       }
+    }
+  },
+  computed: {
+    activeDates() {
+      return Object.entries(this.datesLabels).filter(d => d[1].date >= new Date())
     }
   },
 }
