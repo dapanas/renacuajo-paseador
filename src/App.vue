@@ -25,7 +25,7 @@
         </div>
       </div>
     </div>
-    <div v-if="selectedDate !== '' && selectedGroup === ''" class="row justify-content-center mt-4">
+    <div v-if="selectedDate !== '' && selectedGroup === ''" class="row justify-content-center mt-4 mb-4">
       <div v-for="(group, index) in dates[selectedDate]" :key="index" class="col-auto">
         <div class="card mt-3" style="width: 18rem;">
           <div class="card-header text-center">
