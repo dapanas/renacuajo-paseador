@@ -24,33 +24,33 @@
           <label for="groupSelect" class="form-label">Grupo</label>
         </div>
       </div>
-
-      <section v-if="selectedDate !== ''">
-        <div v-if="selectedGroup === ''" class="container">
-
-          <div v-for="(group, index) in dates[selectedDate]" :key="index" class="card mt-3" style="width: 18rem;">
-            <div class="card-header text-center">
-              <h6>{{ groups[index] }}</h6>
-            </div>
-            <div class="card-body">
-              <div class="col-12">Dejar en <strong><i>{{ group.drop_off_at }}</i></strong></div>
-              <div class="col-12">Recoger en <strong><i>{{ group.pick_up_at }}</i></strong></div>
-            </div>
+    </div>
+    <div v-if="selectedDate !== '' && selectedGroup === ''" class="row justify-content-center mt-4">
+      <div v-for="(group, index) in dates[selectedDate]" :key="index" class="col-auto">
+        <div class="card mt-3" style="width: 18rem;">
+          <div class="card-header text-center">
+            <h6>{{ groups[index] }}</h6>
+          </div>
+          <div class="card-body">
+            <div class="col-12">Dejar en <strong><i>{{ group.drop_off_at }}</i></strong></div>
+            <div class="col-12">Recoger en <strong><i>{{ group.pick_up_at }}</i></strong></div>
           </div>
         </div>
+      </div>
+    </div>
 
-        <div v-if="selectedGroup !== ''" class="container mt-3">
-          <div class="card" style="width: 18rem;">
-            <div class="card-header text-center">
-              <h6>{{ groups[selectedGroup] }}</h6>
-            </div>
-            <div class="card-body">
-              <div class="col-12">Dejar en <strong><i>{{ dates[selectedDate][selectedGroup].drop_off_at }}</i></strong></div>
-              <div class="col-12">Recoger en <strong><i>{{ dates[selectedDate][selectedGroup].pick_up_at }}</i></strong></div>
-            </div>
+    <div v-if="selectedDate !== '' && selectedGroup !== ''" class="row justify-content-center mt-4">
+      <div class="col-auto">
+        <div class="card mt-3" style="width: 18rem;">
+          <div class="card-header text-center">
+            <h6>{{ groups[selectedGroup] }}</h6>
+          </div>
+          <div class="card-body">
+            <div class="col-12">Dejar en <strong><i>{{ dates[selectedDate][selectedGroup].drop_off_at }}</i></strong></div>
+            <div class="col-12">Recoger en <strong><i>{{ dates[selectedDate][selectedGroup].pick_up_at }}</i></strong></div>
           </div>
         </div>
-      </section>
+      </div>
     </div>
   </div>
 </template>
@@ -538,8 +538,14 @@ export default {
   computed: {
     activeDates() {
       return Object.entries(this.datesLabels).filter(d => d[1].date >= new Date())
-    }
+    },
+    firstDate() {
+      return this.activeDates[0][0]
+    },
   },
+  mounted() {
+    this.selectedDate = this.firstDate
+  }
 }
 </script>
 
