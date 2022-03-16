@@ -90,10 +90,10 @@ export default {
         "26_02_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -124,10 +124,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -158,7 +158,7 @@ export default {
           },
           "sembradores": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "las_brisas": {
             "drop_off_at": "Fomento",
@@ -187,17 +187,17 @@ export default {
             "pick_up_at": "Cerámica"
           },
           "las_brisas": {
-            "drop_off_at": "Agroecologia",
-            "pick_up_at": "Agroecologia"
+            "drop_off_at": "Agroecología",
+            "pick_up_at": "Agroecología"
           }
         },
         "26_03_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -228,10 +228,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -262,7 +262,7 @@ export default {
           },
           "sembradores": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "las_brisas": {
             "drop_off_at": "Música",
@@ -324,10 +324,10 @@ export default {
         "30_04_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -358,10 +358,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -392,7 +392,7 @@ export default {
           },
           "sembradores": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "las_brisas": {
             "drop_off_at": "Fomento",
@@ -421,17 +421,17 @@ export default {
             "pick_up_at": "Cerámica"
           },
           "las_brisas": {
-            "drop_off_at": "Agroecologia",
-            "pick_up_at": "Agroecologia"
+            "drop_off_at": "Agroecología",
+            "pick_up_at": "Agroecología"
           }
         },
         "28_05_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -462,10 +462,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -496,7 +496,7 @@ export default {
           },
           "sembradores": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "las_brisas": {
             "drop_off_at": "Música",
