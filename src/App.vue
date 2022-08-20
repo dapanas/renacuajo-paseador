@@ -1,7 +1,7 @@
 <template>
   <div class="container">
     <div class="row">
-      <div class="col-6">
+      <div class="col-12">
         <div class="form-floating">
           <select v-model="selectedDate" class="form-select form-select-lg" aria-label="Seleccione un día"
                   id="dateSelect">
@@ -12,7 +12,9 @@
           <label for="dateSelect" class="form-label">Fecha</label>
         </div>
       </div>
-      <div class="col-6">
+    </div>
+    <div class="row mt-3">
+      <div class="col-12">
         <div class="form-floating">
           <select v-model="selectedGroup" class="form-select form-select-lg" aria-label="Seleccione un grupo"
                   id="groupSelect">
@@ -46,8 +48,10 @@
             <h6>{{ groups[selectedGroup] }}</h6>
           </div>
           <div class="card-body">
-            <div class="col-12">Dejar en <strong><i>{{ dates[selectedDate][selectedGroup].drop_off_at }}</i></strong></div>
-            <div class="col-12">Recoger en <strong><i>{{ dates[selectedDate][selectedGroup].pick_up_at }}</i></strong></div>
+            <div class="col-12">Dejar en <strong><i>{{ dates[selectedDate][selectedGroup].drop_off_at }}</i></strong>
+            </div>
+            <div class="col-12">Recoger en <strong><i>{{ dates[selectedDate][selectedGroup].pick_up_at }}</i></strong>
+            </div>
           </div>
         </div>
       </div>
@@ -61,6 +65,7 @@ export default {
   data() {
     return {
       dates: {
+        // Segundo semestre 2022
         "19_02_2022": {
           "gotitas": {
             "drop_off_at": "Fomento",
@@ -502,7 +507,424 @@ export default {
             "drop_off_at": "Música",
             "pick_up_at": "Música"
           }
-        }
+        },
+        // Segundo semestre 2022
+        "30_07_2022": {
+          "gotitas": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "cantores": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "alfareros": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "azulejos": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "sembradores": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "las_brisas": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Teatro"
+          }
+        },
+        "06_08_2022": {
+          "gotitas": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "cantores": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "alfareros": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "azulejos": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "sembradores": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "las_brisas": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Yoga"
+          }
+        },
+        "13_08_2022": {
+          "gotitas": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "cantores": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "alfareros": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "azulejos": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "sembradores": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "las_brisas": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Pintura"
+          }
+        },
+        "20_08_2022": {
+          "gotitas": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "cantores": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "alfareros": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "azulejos": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "sembradores": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "las_brisas": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Fomento"
+          }
+        },
+        "27_08_2022": {
+          "gotitas": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "cantores": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "alfareros": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "azulejos": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "sembradores": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "las_brisas": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Agroecologia"
+          }
+        },
+        "03_09_2022": {
+          "gotitas": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "cantores": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "alfareros": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "azulejos": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "sembradores": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "las_brisas": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Cerámica"
+          }
+        },
+        "10_09_2022": {
+          "gotitas": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "cantores": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "alfareros": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "azulejos": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "sembradores": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "las_brisas": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Baile"
+          }
+        },
+        "17_09_2022": {
+          "gotitas": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "cantores": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "alfareros": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "azulejos": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "sembradores": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecología"
+          },
+          "las_brisas": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Música"
+          }
+        },
+        "24_09_2022": {
+          "gotitas": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "cantores": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "alfareros": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "azulejos": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "sembradores": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "las_brisas": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Teatro"
+          }
+        },
+        "01_10_2022": {
+          "gotitas": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "cantores": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "alfareros": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "azulejos": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "sembradores": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "las_brisas": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Yoga"
+          }
+        },
+        "08_10_2022": {
+          "gotitas": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "cantores": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "alfareros": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "azulejos": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "sembradores": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "las_brisas": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Pintura"
+          }
+        },
+        "15_10_2022": {
+          "gotitas": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "cantores": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "alfareros": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "azulejos": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "sembradores": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecología"
+          },
+          "las_brisas": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Fomento"
+          }
+        },
+        "22_10_2022": {
+          "gotitas": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "cantores": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "alfareros": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "azulejos": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "sembradores": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "las_brisas": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Agroecologia"
+          }
+        },
+        "29_10_2022": {
+          "gotitas": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "cantores": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "alfareros": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "azulejos": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Fomento"
+          },
+          "sembradores": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "las_brisas": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Cerámica"
+          }
+        },
+        "05_11_2022": {
+          "gotitas": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "cantores": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "alfareros": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecologia"
+          },
+          "azulejos": {
+            "drop_off_at": "Agroecologia",
+            "pick_up_at": "Teatro"
+          },
+          "sembradores": {
+            "drop_off_at": "Fomento",
+            "pick_up_at": "Música"
+          },
+          "las_brisas": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Baile"
+          }
+        },
+        "12_11_2022": {
+          "gotitas": {
+            "drop_off_at": "Pintura",
+            "pick_up_at": "Baile"
+          },
+          "cantores": {
+            "drop_off_at": "Baile",
+            "pick_up_at": "Pintura"
+          },
+          "alfareros": {
+            "drop_off_at": "Yoga",
+            "pick_up_at": "Cerámica"
+          },
+          "azulejos": {
+            "drop_off_at": "Cerámica",
+            "pick_up_at": "Yoga"
+          },
+          "sembradores": {
+            "drop_off_at": "Teatro",
+            "pick_up_at": "Agroecología"
+          },
+          "las_brisas": {
+            "drop_off_at": "Música",
+            "pick_up_at": "Música"
+          }
+        },
       },
       selectedDate: "",
       selectedGroup: "",
@@ -515,6 +937,7 @@ export default {
         las_brisas: "Las Brisas",
       },
       datesLabels: {
+        // Primer semestre 2022
         "19_02_2022": {label: "Febrero 19", date: new Date(2022, 2 - 1, 19, 23, 59, 59)},
         "26_02_2022": {label: "Febrero 26", date: new Date(2022, 2 - 1, 26, 23, 59, 59)},
         "05_03_2022": {label: "Marzo 05", date: new Date(2022, 3 - 1, 5, 23, 59, 59)},
@@ -532,6 +955,23 @@ export default {
         "28_05_2022": {label: "Mayo 28", date: new Date(2022, 5 - 1, 28, 23, 59, 59)},
         "04_06_2022": {label: "Junio 04", date: new Date(2022, 6 - 1, 4, 23, 59, 59)},
         "11_06_2022": {label: "Junio 11", date: new Date(2022, 6 - 1, 11, 23, 59, 59)},
+        // Segundo semestre 2022
+        "30_07_2022": {label: "Julio 30", date: new Date(2022, 7 - 1, 30, 23, 59, 59)},
+        "06_08_2022": {label: "Agosto 6", date: new Date(2022, 8 - 1, 6, 23, 59, 59)},
+        "13_08_2022": {label: "Agosto 13", date: new Date(2022, 8 - 1, 13, 23, 59, 59)},
+        "20_08_2022": {label: "Agosto 20", date: new Date(2022, 8 - 1, 20, 23, 59, 59)},
+        "27_08_2022": {label: "Agosto 27", date: new Date(2022, 8 - 1, 27, 23, 59, 59)},
+        "03_09_2022": {label: "Septiembre 3", date: new Date(2022, 9 - 1, 3, 23, 59, 59)},
+        "10_09_2022": {label: "Septiembre 10", date: new Date(2022, 9 - 1, 10, 23, 59, 59)},
+        "17_09_2022": {label: "Septiembre 17", date: new Date(2022, 9 - 1, 17, 23, 59, 59)},
+        "24_09_2022": {label: "Septiembre 24", date: new Date(2022, 9 - 1, 24, 23, 59, 59)},
+        "01_10_2022": {label: "Octubre 1", date: new Date(2022, 10 - 1, 1, 23, 59, 59)},
+        "08_10_2022": {label: "Octubre 8", date: new Date(2022, 10 - 1, 8, 23, 59, 59)},
+        "15_10_2022": {label: "Octubre 15", date: new Date(2022, 10 - 1, 15, 23, 59, 59)},
+        "22_10_2022": {label: "Octubre 22", date: new Date(2022, 10 - 1, 22, 23, 59, 59)},
+        "29_10_2022": {label: "Octubre 29", date: new Date(2022, 10 - 1, 29, 23, 59, 59)},
+        "05_11_2022": {label: "Noviembre 5", date: new Date(2022, 11 - 1, 5, 23, 59, 59)},
+        "12_11_2022": {label: "Noviembre 12", date: new Date(2022, 11 - 1, 12, 23, 59, 59)},
       }
     }
   },
