@@ -538,10 +538,10 @@ export default {
         "06_08_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -572,10 +572,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -606,7 +606,7 @@ export default {
           },
           "sembradores": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "las_brisas": {
             "drop_off_at": "Fomento",
@@ -635,17 +635,17 @@ export default {
             "pick_up_at": "Cerámica"
           },
           "las_brisas": {
-            "drop_off_at": "Agroecologia",
-            "pick_up_at": "Agroecologia"
+            "drop_off_at": "Agroecología",
+            "pick_up_at": "Agroecología"
           }
         },
         "03_09_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -676,10 +676,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -746,10 +746,10 @@ export default {
         "01_10_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -780,10 +780,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
@@ -843,17 +843,17 @@ export default {
             "pick_up_at": "Cerámica"
           },
           "las_brisas": {
-            "drop_off_at": "Agroecologia",
-            "pick_up_at": "Agroecologia"
+            "drop_off_at": "Agroecología",
+            "pick_up_at": "Agroecología"
           }
         },
         "29_10_2022": {
           "gotitas": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "cantores": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "alfareros": {
@@ -884,10 +884,10 @@ export default {
           },
           "alfareros": {
             "drop_off_at": "Teatro",
-            "pick_up_at": "Agroecologia"
+            "pick_up_at": "Agroecología"
           },
           "azulejos": {
-            "drop_off_at": "Agroecologia",
+            "drop_off_at": "Agroecología",
             "pick_up_at": "Teatro"
           },
           "sembradores": {
