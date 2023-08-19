@@ -108,7 +108,361 @@ export default {
   name: "App",
   data() {
     return {
-      dates: {},
+      dates: {
+        "05_08_2023": {
+          saltamontes: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          colibries: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          enlazadores: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+        },
+        "12_08_2023": {
+          saltamontes: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          colibries: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          enlazadores: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+        },
+        "19_08_2023": {
+          saltamontes: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          colibries: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          enlazadores: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+        },
+        "26_08_2023": {
+          saltamontes: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          colibries: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          enlazadores: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+        },
+        "02_09_2023": {
+          saltamontes: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          colibries: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          enlazadores: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+        },
+        "09_09_2023": {
+          saltamontes: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          colibries: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          enlazadores: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+        },
+
+        "16_09_2023": {
+          saltamontes: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          colibries: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          enlazadores: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+        },
+        "23_09_2023": {
+          saltamontes: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          colibries: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          enlazadores: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+        },
+        "30_09_2023": {
+          saltamontes: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          colibries: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          enlazadores: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+        },
+        "07_10_2023": {
+          saltamontes: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          colibries: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          enlazadores: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+        },
+        "14_10_2023": {
+          saltamontes: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          colibries: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          enlazadores: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+        },
+        "21_10_2023": {
+          saltamontes: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          colibries: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          enlazadores: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+        },
+        "28_10_2023": {
+          saltamontes: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          colibries: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          enlazadores: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+        },
+        "04_11_2023": {
+          saltamontes: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          colibries: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          enlazadores: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Cerámica",
+            pick_up_at: "Yoga",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+        },
+        "11_11_2023": {
+          saltamontes: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          colibries: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          enlazadores: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Baile",
+            pick_up_at: "Pintura",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Yoga",
+            pick_up_at: "Cerámica",
+          },
+        },
+        "17_11_2023": {
+          saltamontes: {
+            drop_off_at: "Teatro",
+            pick_up_at: "Agroecología",
+          },
+          colibries: {
+            drop_off_at: "Agroecología",
+            pick_up_at: "Teatro",
+          },
+          enlazadores: {
+            drop_off_at: "Fomento",
+            pick_up_at: "Música",
+          },
+          exploradores_creativos: {
+            drop_off_at: "Música",
+            pick_up_at: "Fomento",
+          },
+          sueno_de_lobos: {
+            drop_off_at: "Pintura",
+            pick_up_at: "Baile",
+          },
+        },
+      },
       selectedDate: "",
       selectedGroup: "",
       groups: {
@@ -119,65 +473,69 @@ export default {
         sueno_de_lobos: "Sueño de lobos",
       },
       datesLabels: {
-        "11_03_2023": {
-          label: "Marzo 11",
-          date: new Date(2023, 3 - 1, 11, 23, 59, 59),
+        "05_08_2023": {
+          label: "Agosto 5",
+          date: new Date(2023, 8 - 1, 5, 23, 59, 59),
         },
-        "18_03_2023": {
-          label: "Marzo 18",
-          date: new Date(2023, 3 - 1, 18, 23, 59, 59),
+        "12_08_2023": {
+          label: "Agosto 12",
+          date: new Date(2023, 8 - 1, 12, 23, 59, 59),
         },
-        "25_03_2023": {
-          label: "Marzo 25",
-          date: new Date(2023, 3 - 1, 25, 23, 59, 59),
+        "19_08_2023": {
+          label: "Agosto 19",
+          date: new Date(2023, 8 - 1, 19, 23, 59, 59),
         },
-        "01_04_2023": {
-          label: "Abril 1",
-          date: new Date(2023, 4 - 1, 1, 23, 59, 59),
+        "26_08_2023": {
+          label: "Agosto 26",
+          date: new Date(2023, 8 - 1, 26, 23, 59, 59),
         },
-        "08_04_2023": {
-          label: "Abril 8",
-          date: new Date(2023, 4 - 1, 8, 23, 59, 59),
+        "02_09_2023": {
+          label: "Septiembre 2",
+          date: new Date(2023, 9 - 1, 2, 23, 59, 59),
         },
-        "15_04_2023": {
-          label: "Abril 15",
-          date: new Date(2023, 4 - 1, 15, 23, 59, 59),
+        "09_09_2023": {
+          label: "Septiembre 9",
+          date: new Date(2023, 9 - 1, 9, 23, 59, 59),
         },
-        "22_04_2023": {
-          label: "Abril 22",
-          date: new Date(2023, 4 - 1, 22, 23, 59, 59),
+        "16_09_2023": {
+          label: "Septiembre 16",
+          date: new Date(2023, 9 - 1, 16, 23, 59, 59),
         },
-        "29_04_2023": {
-          label: "Abril 29",
-          date: new Date(2023, 4 - 1, 29, 23, 59, 59),
+        "23_09_2023": {
+          label: "Septiembre 23",
+          date: new Date(2023, 9 - 1, 23, 23, 59, 59),
         },
-        "06_05_2023": {
-          label: "Mayo 6",
-          date: new Date(2023, 5 - 1, 6, 23, 59, 59),
+        "30_09_2023": {
+          label: "Septiembre 30",
+          date: new Date(2023, 9 - 1, 30, 23, 59, 59),
         },
-        "13_05_2023": {
-          label: "Mayo 13",
-          date: new Date(2023, 5 - 1, 13, 23, 59, 59),
+        "07_10_2023": {
+          label: "Octubre 7",
+          date: new Date(2023, 10 - 1, 7, 23, 59, 59),
         },
-        "20_05_2023": {
-          label: "Mayo 20",
-          date: new Date(2023, 5 - 1, 20, 23, 59, 59),
+        "14_10_2023": {
+          label: "Octubre 14",
+          date: new Date(2023, 10 - 1, 14, 23, 59, 59),
         },
-        "27_05_2023": {
-          label: "Mayo 27",
-          date: new Date(2023, 5 - 1, 27, 23, 59, 59),
+        "21_10_2023": {
+          label: "Octubre 21",
+          date: new Date(2023, 10 - 1, 21, 23, 59, 59),
         },
-        "03_06_2023": {
-          label: "Junio 3",
-          date: new Date(2023, 6 - 1, 3, 23, 59, 59),
+        "28_10_2023": {
+          label: "Octubre 28",
+          date: new Date(2023, 10 - 1, 28, 23, 59, 59),
         },
-        "10_06_2023": {
-          label: "Junio 10",
-          date: new Date(2023, 6 - 1, 10, 23, 59, 59),
+        "04_11_2023": {
+          label: "Noviembre 4",
+          date: new Date(2023, 11 - 1, 4, 23, 59, 59),
         },
-        "17_06_2023": {
-          label: "Junio 17",
-          date: new Date(2023, 6 - 1, 17, 23, 59, 59),
+        "11_11_2023": {
+          label: "Noviembre 11",
+          date: new Date(2023, 11 - 1, 11, 23, 59, 59),
+        },
+        "17_11_2023": {
+          label: "Noviembre 17",
+          date: new Date(2023, 11 - 1, 17, 23, 59, 59),
         },
       },
     };
